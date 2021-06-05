@@ -1,0 +1,121 @@
+.contact {
+    margin: 0 2rem;
+    padding-top: 6rem;
+
+    h2 {
+        color: $accent-blue;
+        margin-bottom: 1rem;
+    }
+
+    li,
+    p,
+    label {
+        color: $main-white;
+    }
+
+    li {
+        list-style: none;
+    }
+
+    ul {
+        padding: 0;
+    }
+
+    #map {
+        border-radius: 0.5rem;
+        width: 100%;
+        height: 20rem;
+    }
+
+    &__left {
+        margin-bottom: 6rem;
+    }
+
+    &__right {
+       margin-bottom: 6rem;
+
+
+       label {
+           width: 100%;
+       } 
+
+       input,
+       select {
+           margin-bottom: 1.5rem;
+       }
+       
+       select {
+           margin-top: 1rem;
+       }
+
+       .select-wrapper {
+           width: 100%;
+       }
+
+       input,
+       textarea,
+       select {
+           border-radius: 0.5rem;
+           outline: none;
+           border: none;
+           padding: 0.5rem 1rem;
+           max-width: 100%;
+       }
+
+       button {
+           margin-top: 1rem;
+           border: none;
+           border-radius: 0.5rem;
+           color: $main-white;
+           background-color: $accent-blue;
+           padding: 0.25rem 0.5rem;
+           font-weight: bold;
+           transition: 0.2s ease;
+
+           &:hover {
+               color: $accent-blue;
+               background-color: $main-white;
+           }
+       }
+
+       #user__file {
+            padding-left: 0;
+            color: $main-white;
+        }
+
+        input[type=file]::file-selector-button {
+            margin-top: 1rem;
+            border: none;
+            border-radius: 0.5rem;
+            color: #dddddd;
+            background-color: #6ea6b6;
+            padding: 0.25rem 0.5rem;
+            font-weight: bold;
+            transition: 0.2s ease;
+            cursor: pointer;
+            margin-right: 1rem;
+        }
+    }
+}
+
+@media (min-width: $media-small) {
+    .contact {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-between;
+
+        &__left {
+            width: 48%;
+        }
+
+        &__right {
+            width: 48%;
+        }
+    }
+}
+
+@media (min-width: 100rem) {
+    .contact {
+        margin: 0;
+    }
+}

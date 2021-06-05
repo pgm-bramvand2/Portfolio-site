@@ -1,0 +1,29 @@
+[
+    {
+        "title": "Digital Business Strategy ",
+        "description": "How do you make the right decisions about your digital future? More than ever, you need a strategy that leads to action. A vision with a plan. Clarity about where to direct your digital investments. You can get that clarity by running a strategic sprint with us. They’re your ticket towards better digital decisions. It’s consultancy without the big wigs.",
+        "image": "business-strategy.jpg",
+        "image-alt": "Developers discussing business strategy in a meeting"
+    },
+    
+    {
+        "title": "Platform Architecture",
+        "description": "A digital product can only grow if it’s embedded in the right ecosystem and its digital strategy is built on strong fundamentals. Our solution architects analyse and develop scalable platforms to support all kinds of applications.",
+        "image": "platform-architecture.jpg",
+        "image-alt": "Platform architect giving a presentation"
+    },
+    
+    {
+        "title": "Digital Product Design",
+        "description": "Our digital product designers translate your vision and needs into best-in-class interfaces that are both effective and delightful. With leading best practices and proven design principles, we ensure your designs are clean, focused and validated with your end-user.",
+        "image": "product-design.jpeg",
+        "image-alt": "Developer giving a presentation about product design"
+    },
+    
+    {
+        "title": "Software Engineering",
+        "description": "Turning a good concept into a great digital product, that's what software engineering is all about. It's not just the concept itself that matters: performance, maintainability, security, extensibility... can be equally important for a product to succeed. That's why we don't just develop products, we engineer them.",
+        "image": "software-engineering.jpg",
+        "image-alt": "Developer giving a presentation abou softwar engineering"
+    }
+]

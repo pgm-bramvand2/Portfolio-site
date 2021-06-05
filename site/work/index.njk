@@ -1,0 +1,16 @@
+---
+layout: layouts/base.njk
+title: Work
+eleventyNavigation:
+  key: Work
+  order: 3
+---
+<section class="works">
+  {% if collections.works | length %}
+      <ul>
+        {% for work in collections.works %}
+            {% include "components/work-teaser.njk" %}          
+        {% endfor %}
+    </ul>    
+  {% endif %}
+</section>

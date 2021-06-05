@@ -1,0 +1,69 @@
+.services {
+    margin: $base-margin;
+    margin-top: 6rem;
+
+    &__img-container {
+        width: 100%;
+        height: 30rem;
+
+        img {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+            border-radius: 0.5rem;
+            filter: brightness(65%);
+            transition: 0.2s ease;
+
+            &:hover {
+                filter: brightness(100%);
+            }
+        }
+    }
+
+    article {
+        margin-bottom: 6rem;
+        opacity: 0;
+        transform: translateY(-1rem);
+        transition: 2s ease;
+        will-change: transform, opacity;
+
+        h2 {
+            color: $accent-blue;
+            margin-bottom: 1.5rem;
+        }
+    
+        p {
+            color: $main-white;
+        }
+    }
+}
+
+@media (min-width: $media-small) {
+    .services {
+        article {
+            display: flex;
+            justify-content: space-between;
+            margin-bottom: 10rem;
+            opacity: 0;
+        }
+
+        &__text {
+            width: 48%;
+        }
+
+        &__img-container {
+            width: 48%;
+        }
+
+        article:nth-child(odd) {
+            flex-direction: row-reverse;
+        }
+    }
+}
+
+.services {
+    .is-visible {
+        opacity: 1;
+        transform: translateY(1rem);
+    }
+}

@@ -1,0 +1,73 @@
+[
+    {
+        "image": "vincent.jpg",
+        "image-alt": "Profile picture of Vincent Nelson",
+        "name": "Vincent Nelson",
+        "position": "front-end dev",
+        "github": "link to github"
+    },
+
+    {
+        "image": "alice.jpg",
+        "image-alt": "Profile picture of Alice Morgan",
+        "name": "Alice Morgan",
+        "position": "front-end dev",
+        "github": "link to github"
+    },
+
+    {
+        "image": "george.jpg",
+        "image-alt": "Profile picture of George Foreman",
+        "name": "George Foreman",
+        "position": "front-end dev",
+        "github": "link to github"
+    },
+
+    {
+        "image": "jane.jpg",
+        "image-alt": "Profile picture of Jane Doe",
+        "name": "Jane Doe",
+        "position": "front-end dev",
+        "github": "link to github"
+    },
+
+    {
+        "image": "john.jpg",
+        "image-alt": "Profile picture of John Deer",
+        "name": "John Deer",
+        "position": "front-end dev",
+        "github": "link to github"
+    },
+
+    {
+        "image": "kim.jpg",
+        "image-alt": "Profile picture of Kim Pho",
+        "name": "Kim Pho",
+        "position": "front-end dev",
+        "github": "link to github"
+    },
+
+    {
+        "image": "rob.jpg",
+        "image-alt": "Profile picture of Rob Average",
+        "name": "Rob Average",
+        "position": "front-end dev",
+        "github": "link to github"
+    },
+
+    {
+        "image": "kelly.jpg",
+        "image-alt": "Profile picture of Kelly Burton",
+        "name": "Kelly Burton",
+        "position": "front-end dev",
+        "github": "link to github"
+    },
+    
+    {
+        "image": "donald.jpg",
+        "image-alt": "Profile picture of Donald Kelley",
+        "name": "Donald Kelley",
+        "position": "front-end dev",
+        "github": "link to github"
+    }
+]

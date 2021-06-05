@@ -1,0 +1,23 @@
+---
+layout: layouts/base-work-detail.njk
+---
+
+<section class="work-detail">
+    <article>
+        <h1>{{ title }}</h1>
+        {{ content | safe }}
+    </article>
+
+    {% if collections.works | highlighted | length %}
+            <h2>Related items</h2>
+            <div class="works">
+                <ul>
+                    {% for work in collections.works | highlighted %}
+                        {% if work.url !== page.url%}
+                            {% include "components/work-teaser.njk" %}  
+                        {% endif %}
+                    {% endfor %}
+                </ul>
+            </div>    
+    {% endif %}
+</section>

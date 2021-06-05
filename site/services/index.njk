@@ -1,0 +1,24 @@
+---
+tags: none
+layout: layouts/base.njk
+title: Services
+eleventyNavigation:
+  key: Services
+  order: 2
+---
+<section class="services">
+  {% if services | length %}
+    {% for service in services %}
+        <article class="show-on-scroll">
+          <div class="services__text">
+            <h2>{{ service.title }}</h2>
+            <p>{{ service.description }}</p>
+          </div>
+
+          <div class="services__img-container">
+            <img src="{{ '/static/images/services/' | url }}{{ service.image }}" alt="{{ service.image-alt }}">
+          </div>
+        </article>
+    {% endfor %}
+  {% endif %}
+</section>

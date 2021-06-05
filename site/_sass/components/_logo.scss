@@ -1,0 +1,16 @@
+.logo {
+    font-family: $font-family-montserrat;
+    font-size: 42px;
+    font-weight: bold;
+    padding-left: 0;
+
+    a {
+        color: $accent-blue;
+    }
+}
+
+@media (max-width: $media-small) {
+    .logo {
+        font-size: 30px;
+    }
+}

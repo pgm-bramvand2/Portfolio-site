@@ -1,0 +1,19 @@
+---
+layout: layouts/base.njk
+title: Team
+eleventyNavigation:
+  key: Team
+  order: 4
+---
+
+<section class="team base-margin">
+  {% for member in team %}
+    <article>
+      <div class="img-container">
+        <img src="{{ '/static/images/team/' | url }}{{ member.image }}" alt="{{ member.image-alt }}">
+      </div>
+      <p class="team__name">{{ member.name }}</p>
+      <p>{{ member.position }}</p>
+    </article>
+  {% endfor %}
+</section>

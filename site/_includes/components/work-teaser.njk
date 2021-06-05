@@ -1,0 +1,11 @@
+<li>
+    <a href="{{ work.url | url }}">
+        <figure>
+            <img src="{{ '/static/images/works/' | url }}{{ work.data.image }}" alt="work.data.imageAlt">
+        </figure>
+
+        <strong>{{ work.data.title }}</strong>
+
+        <p>{{ work.data.description }}</p>
+    </a>          
+</li>
