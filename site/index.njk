@@ -6,26 +6,134 @@ title: Home
 <main>
   <h1 class="screen-read">Portfolio site Bram Vandenbussche</h1>
   <section id="about">
-    <article class="h-layout">
-      <div>
-        <h2>[01] About</h2>
+    <article class="h-layout--to-right">
+      <div class="column column__text">
+      <h2>[01] About</h2>
+        <strong>
+          Hi!
+          <br>
+          I'm Bram
+        </strong>
+
+        <p>
+          I'm a student at Arteveldehogeschool Gent persuing an <em>associate degree in programming</em> and ultimatly a job as a <em>full stack developer</em>.
+        </p>
+
+        <p>
+          My full name is <em>Bram Vandenbussche</em> and I first saw the light of day on 14th of november 1989. I'm into everything that has anything to do with <em>web technology</em>. When I'm not coding the night away you'll either still find me behind a computer playing games or wearing a VR headset or being a bookworm. When I'm feeling the need to get outside I'll be taking long hikes along with my dog.
+        </p>
+        <div>
+          <p>
+            Want to know more? Here is
+          </p>
+
+          <a href="https://github.com/pgm-bramvand2" class="button" target="blank">My gitHub</a>
+        
+          <a href="https://www.linkedin.com/in/bram-vandenbussche-0413751b6/" class="button" target="blank">My LinkedIn</a>
+        </div>
       </div>
       
-      <div>
-      
+      <div class="column column__image">
+        <img src="{{ "/static/images/profile-picture.jpg" | url}}" alt="">
       </div>
+    </article>
+  </section>
+
+  <section id="skills">
+    <article class="h-layout h-layout--to-left">
+    <div class="column column__image">
+        <img src="{{ "/static/images/typewriter.jpg" | url}}" alt="">
+    </div>
+    <div class="column column__text">
+      <h2>[02] Skills</h2>
+      
+      <p>
+        I am versed in several relevant up to date technologies. But my mission remains to expand my knowledge and improve my current skills. 
+      </p>
+
+      <ul class="skill-list">
+        {% for skill in skills %}
+            <li>{{ skill.name }}</li>
+        {% endfor %}
+      </ul>
+    </div>
+    
+    <div class="column column__text">
+    </div>
     </article>
   </section>
 
   <section id="works">
     <article class="h-layout">
+    <h2>[03] Works</h2>
+    {% for work in works %}
+      <div class="work-detail">
+        <div class="work-detail__image-wrapper">
+          <img src="{{ work.image[0] }}" alt="{{ work.name }}">
+        </div>
+
+        <div class="work-detail__info">
+          <h3>{{ work.name }}</h3>
+          
+          <p>{{ work.description }}</p>
+          
+          <ul>
+            <li>
+              <a href="{{ work.gitHub.url }}" class="button" target="blank">gitHub</a>
+            </li>
+
+            {% if work.gitHub.pagesUrl %}
+              <li>
+                <a href="{{ work.gitHub.pagesUrl }}" class="button" target="blank">gitHub pages</a>
+              </li>
+            {% endif %}
+          </ul>
+        </div>
+      </div>
+    {% endfor %}
     
     </article>
   </section>
 
   <section id="contact">
-    <article class="h-layout">
+    <article class="h-layout h-layout--to-right">
+      <div class="column column__text">
+        <h2>[04] Contact</h2>
+        <h3>Location</h3>
+        <ul>
+          <li>Veldhoek 20D</li>
+          <li>9931 Lievegem</li>
+          <li>Belgium</li>
+        </ul>
+
+        <h3>Info</h3>
+        
+        <ul>
+          <li>0498 71 63 49</li>
+          
+          <li>bram.vandenbussche@live.be</li>
+          
+          <li>
+            <a href="https://www.linkedin.com/in/bram-vandenbussche-0413751b6/" target="blank">My LinkedIn</a>
+          </li>
+
+          <li>
+            <a href="https://github.com/pgm-bramvand2" target="blank">My Github</a>
+          </li>
     
+          <li>
+            <a href="https://stackexchange.com/users/20696519/bram-vandenbussche" target="blank">My Stack Overflow</a>
+          </li>
+        </ul>
+      </div>
+
+      <div class="column column__image">
+        <img src="{{ "/static/images/telephone.jpg" | url }}" alt="Old telephone horn">
+      </div>
     </article>
   </section>
+  
+  <button class="button button--to-top" id="to-top-button">
+    to top
+  </button>
 </main>

@@ -1,0 +1,13 @@
+@keyframes hover {
+    from {
+        transform: translateY(0);
+    }
+
+    70% {
+        transform: translateY(1rem);
+    }
+
+    to {
+        transform: translateY(0);
+    }
+}

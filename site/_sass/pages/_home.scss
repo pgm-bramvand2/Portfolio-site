@@ -1,15 +1,287 @@
 section {
-    margin: 2rem 0;
+    margin: 15rem 0;
     width: 100%;
-    height: 100vh;
+
+    &:last-child {
+        margin: 0;
+    }
 
     .h-layout {
         margin: 0 auto;
-        width: 65rem;
+        width: 100%;
+    }
+}
+
+article {
+    padding: 2rem;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    height: 100%;
+
+    h2 {
+        width: 100%;
+        margin-top: 0;
+        font-family: 'Crimson Text';
+        font-size: 3rem;
+        font-style: italic;
+
+    }
+
+    .column {
+        width: 100%;
+        
+        &__text {
+            margin-top: 1rem;
+            align-items: center;
+            order: 1;
+
+            h3 {
+                margin-bottom: 0;
+                font-size: 2rem;
+                line-height: 1;
+            }
+            
+            strong {
+                font-family: 'Crimson Text';
+                font-size: 2.5rem;
+                font-weight: normal;
+            }
+            
+            em {
+                font-weight: bold;
+                font-size: 1.5rem;
+                font-style: normal;
+            }
+            
+            ul {
+                padding: 0;
+                list-style: none;
+                font-size: 1.5rem;
+
+                li {
+                    display: block;
+                    margin: .5rem 0;
+
+                    a {
+                        color: $main-black;
+                        font-size: 1.5rem;
+                        font-weight: bold;
+
+                        &::after {
+                            content: '';
+                            display: block;
+                            width: 2rem;
+                            height: 1px;
+                            background-color: $main-black;
+                            transition: $transition-default;
+                        }
+
+                        &:hover {
+
+                            &::after {
+                                width: 8rem;
+                            }
+                        }
+                    }
+                }
+            }
+        }
+
+        .skill-list {
+            width: 100%;
+            display: flex;
+            flex-wrap: wrap;
+            list-style: none;
+            padding: 0;
+            margin: 0;
+    
+            li {
+                margin: .5rem;
+                padding: .5rem 1rem;
+                border: $border-default;
+            }
+        }
+        
+        &__image {
+            height: 20rem;
+            width: 100%;
+            
+            img {
+                object-fit: cover;
+                width: 100%;
+                height: 100%;
+                border: $border-default;
+                filter: grayscale(1);
+            }
+        }
     }
 
 }
 
-article {
+@media (min-width: $media-small) {
+    section {
+        margin: 15rem 0;
+        width: 100%;
+        height: 100vh;
+    
+        &:last-child {
+            margin: 0;
+        }
+    
+        .h-layout {
+            margin: 0 auto;
+            width: 80rem;
+            max-width: 100%;
+    
+            &--long {
+                height: inherit;
+            }
+    
+            &--to-left {
+                width: calc(40vw + 49.5rem);
+                margin: 0 auto 2rem 0;
+                padding-right: 2rem;
+    
+                
+                .column{
+                    &__image {
+                        margin-right: 1.5rem;
+                        
+                        img {
+                            padding-right: 1rem;
+                            padding-bottom: .5rem;
+                        }
+                    }
+                }
+            }
+    
+            &--to-right {
+                width: calc(40vw + 49.5rem);
+                margin: 0 0 2rem auto;
+                padding-left: 2rem;
+
+                .column {
+                    &__image {
+                        margin-left: 1.5rem;
+                        img {
+                            padding-left: 1rem;
+                            padding-bottom: .5rem;
+                        }
+                    }
+                }
+            }
+        }
+    }
+    
+    #works {
+        height: inherit;
+        padding: 0 2rem;
+    }
+    
+    article {
+        padding: 2rem 0;
+        display: flex;
+        flex-wrap: wrap;
+        align-items: center;
+        height: 100%;
+    
+        h2 {
+            width: 100%;
+            margin-top: 0;
+            font-family: 'Crimson Text';
+            font-size: 3rem;
+            font-style: italic;
+    
+        }
+    
+        .column {
+            width: 40%;
+            
+            &__text {
+                order:0;
+                align-items: center;
+    
+                h3 {
+                    margin-bottom: 0;
+                    font-size: 2rem;
+                    line-height: 1;
+                }
+                
+                strong {
+                    font-family: 'Crimson Text';
+                    font-size: 2.5rem;
+                    font-weight: normal;
+                }
+                
+                em {
+                    font-weight: bold;
+                    font-size: 1.5rem;
+                    font-style: normal;
+                }
+                
+                ul {
+                    padding: 0;
+                    list-style: none;
+                    font-size: 1.5rem;
+    
+                    li {
+                        display: block;
+                        margin: .5rem 0;
+    
+                        a {
+                            color: $main-black;
+                            font-size: 1.5rem;
+                            font-weight: bold;
+    
+                            &::after {
+                                content: '';
+                                display: block;
+                                width: 2rem;
+                                height: 1px;
+                                background-color: $main-black;
+                                transition: $transition-default;
+                            }
+    
+                            &:hover {
+    
+                                &::after {
+                                    width: 8rem;
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+            
+            &__image {
+                height: 100%;
+                width: calc(60% - 1.5rem);
+                
+                img {
+                    object-fit: cover;
+                    width: 100%;
+                    height: 100%;
+                    border: $border-default;
+                    filter: grayscale(1);
+                }
+            }
+        }
+    
+        .skill-list {
+            width: 100%;
+            display: flex;
+            flex-wrap: wrap;
+            list-style: none;
+            padding: 0;
+            margin: 0;
+    
+            li {
+                margin: .5rem;
+                padding: .5rem 1rem;
+                border: $border-default;
+            }
+        }
+    }
 
 }

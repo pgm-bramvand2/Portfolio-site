@@ -9,9 +9,13 @@
         <link type="text/plain" rel="author" href="{{ '/humans.txt' | url }}" />       
         <link rel="stylesheet" href="{{ '/static/css/main.css' | url }}">
     </head>
+
     <body class="{{ templateClass }}">
         {% include "components/layout/header.njk" %}
+
         {{ content |safe }} 
+
+        {% include "components/layout/footer.njk" %}
         <script src="{{ '/static/js/main.js' | url }}" type="module"></script>
     </body>
 </html>
