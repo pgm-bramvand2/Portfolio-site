@@ -3,30 +3,23 @@
 @import "./abstracts/mixins";
 @import "./abstracts/variables";
 @import "./abstracts/keyframes";
+@import "./abstracts/typography";
 
 // vendors
-@import "./vendors/bootstrap";
+
 
 // components
-@import "./components/logo";
 @import "./components/navigation";
-@import "./components/navigation-footer";
-@import "./components/typer-title";
-@import "./components/footer";
-@import "./components/works";
+
 
 // layout
-@import "./layout/body";
 @import "./layout/header";
-@import "./layout/main";
-@import "./layout/footer";
+
 
 // pages 
-@import "./pages/teams";
-@import "./pages/works-detail";
-@import "./pages/services";
 @import "./pages/home";
-@import "./pages/contact";
+
 
 // base
+@import "./base/base";
 @import "./base/helpers";

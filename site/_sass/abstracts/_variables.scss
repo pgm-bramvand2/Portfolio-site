@@ -10,7 +10,8 @@ $ahs-green: #5AB946;
 $ahs-blue: #00A5D9;
 
 $main-white: rgb(221, 221, 221);
-$main-black: rgb(34, 34, 34);
+$main-black: #2E2E2E;
+$main-beige: #EBE7E1;
 $accent-blue: #6ea6b6;
 
 $spacing: 18;
@@ -19,3 +20,5 @@ $base-margin: 2rem;
 $media-small: 45rem;
 $media-medium: 60rem;
 $media-big: 75rem;
+
+$transition-default: all 0.3s ease-in-out;

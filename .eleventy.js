@@ -10,6 +10,7 @@ module.exports = function (eleventyConfig) {
   eleventyConfig.addPassthroughCopy({ 'site/_static/css': 'static/css' });
   eleventyConfig.addPassthroughCopy({ 'site/_static/images': 'static/images' });
   eleventyConfig.addPassthroughCopy({ 'site/_static/js': 'static/js' });
+  eleventyConfig.addPassthroughCopy({ 'site/_static/fonts': 'static/fonts' });
   eleventyConfig.addPassthroughCopy({ 'site/humans.txt': 'humans.txt' });
 
   // Browsersync Overrides

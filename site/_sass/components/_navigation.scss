@@ -1,88 +1,34 @@
-.nav {
-    --nav-spacing: #{$spacing*1px};
-    padding-right: 0;
+nav {
+    position: absolute;
+    right: 0;
 
-    .hamburger {
-        display: none;
-    }
-
-    .show {
-        display: flex;
-        flex-wrap: wrap;
-        justify-content: flex-end;
-        position: absolute;
-        top: 5rem;
-        width: 10rem;
-
-        li a {
-            padding-right: 0;
-        }
-    }
-
-    &__list {
-        display: flex;
-        flex-direction: row;
-        flex-wrap: nowrap;
-        justify-content: flex-end;
-        align-items: center;
-
-        list-style: none;
+    // transform: translateY(50%);
+    ul {
         margin: 0;
-        padding: 0;
+        padding-right: 1.6rem;
+        padding-left: 0;
+        list-style: none;
 
-        li:last-child a {
-            padding-right: 0;
-        }
+        li {
 
-        &-item {
-            font-family: $font-family-montserrat;
-            font-size: 28px;
-            font-weight: 500;
-
-            > a {
-                position: relative;
+            a {
+                padding: .25rem 1rem;
                 display: block;
-                color: $main-white;
-               
-                padding: calc(var(--nav-spacing)/2) var(--nav-spacing);
-                transition: 0.2s ease;
-                text-decoration: none;
-                
+                width: 28rem;
+                background-color: $main-black;
+                text-align: right;
+                font-size: 3.8rem;
+                color: $main-beige;
+                transition: $transition-default;
+                border: solid 1px $main-black;
+
                 &:hover {
-                    color: $accent-blue;
+                    margin: .2rem;
+                    transform: skewX(-5deg);
+                    background-color: $main-beige;
+                    color: $main-black;
                 }
             }
-
-            &--active {
-                > a {
-                    color: $accent-blue;
-                }
-            }
-        }
-    }
-}
-
-@media (max-width: 1100px) {
-    .nav {
-        display: flex;
-        align-items: center;
-        justify-content: flex-end;
-
-        .hamburger {
-            display: block;
-            width: 2.5rem;
-            height: 2.5rem;
-            
-            svg {
-                width: 100%;
-                height: 100%;
-                fill: $main-white;
-                cursor: pointer;
-            }
-        }
-
-        &__list {
-            display: none;
         }
     }
 }
