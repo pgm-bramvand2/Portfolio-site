@@ -1,0 +1,15 @@
+ [
+        {"name": "HTML5"},
+        {"name": "CSS"},
+        {"name": "SCSS"},
+        {"name":"Sass"},
+        {"name":"11ty"},
+        {"name":"JavaScript"},
+        {"name":"React"},
+        {"name":"NodeJS"},
+        {"name":"Express"},
+        {"name":"Sequelize"},
+        {"name":"SQLite3"},
+        {"name":"Adobe XD"}
+    ]
+

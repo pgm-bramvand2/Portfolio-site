@@ -1,0 +1,30 @@
+.button {
+    cursor: pointer;
+    padding: .5rem 1rem; 
+    border: $border-default;
+    background-color: $main-black;
+    color: $main-beige;
+    transition: $transition-default;
+
+    &:hover {
+        background-color: $main-beige;
+        color: $main-black;
+    }
+
+    &--to-top {
+        position: fixed;
+        bottom: 2rem;
+        right: -10rem;
+        opacity: 0;
+        text-transform: uppercase;
+        font-size: 1.2rem;
+        animation: 'hover' 5s infinite;
+
+       
+    } 
+    
+    &.shown {
+            right: 2rem;
+            opacity: 1;
+        }
+}    
