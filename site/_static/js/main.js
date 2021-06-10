@@ -1,5 +1,3 @@
-import { MAPBOX_TOKEN, MAP_OPTIONS, OFFICE_COORDS } from './constants.js'
-
 (() => {
   const app = {
     initialize () {
