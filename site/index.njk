@@ -69,7 +69,7 @@ title: Home
     {% for work in works %}
       <div class="work-detail">
         <div class="work-detail__image-wrapper">
-          <img src="{{ work.image[0] }}" alt="{{ work.name }}">
+          <img src="{{  work.image[0] | url}}" alt="{{ work.name }}">
         </div>
 
         <div class="work-detail__info">
