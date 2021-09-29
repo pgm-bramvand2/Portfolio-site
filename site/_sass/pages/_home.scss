@@ -50,8 +50,14 @@ article {
             
             em {
                 font-weight: bold;
-                font-size: 1.5rem;
+                font-size: 1.2rem;
                 font-style: normal;
+            }
+
+            @media (min-width: $media-medium) {
+                em {
+                    font-size: 1.5rem;
+                }
             }
             
             ul {
