@@ -63,7 +63,10 @@ article {
             ul {
                 padding: 0;
                 list-style: none;
-                font-size: 1.5rem;
+
+                @media (min-width: $media-medium) {
+                    font-size: 1.5rem;
+                }
 
                 li {
                     display: block;
