@@ -539,10 +539,16 @@ body {
   background-color: #EBE7E1;
   color: #2E2E2E;
   overflow-x: hidden;
-  line-height: 1.4;
-  font-size: 1.2rem;
+  line-height: 1.2;
+  font-size: 1rem;
 }
 
+@media (min-width: 60rem) {
+  body {
+    line-height: 1.4;
+    font-size: 1.2rem;
+  }
+}
 main {
   width: 100%;
 }
