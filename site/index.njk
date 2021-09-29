@@ -34,7 +34,7 @@ title: Home
       </div>
       
       <div class="column column__image">
-        <img src="{{ "/static/images/profile.jpg" | url }}" alt="Profile picture Bram Vandenbussche">
+        <img loading="lazy" src="{{ "/static/images/profile.jpg" | url }}" alt="Profile picture Bram Vandenbussche">
       </div>
     </article>
   </section>
@@ -42,7 +42,7 @@ title: Home
   <section id="skills">
     <article class="h-layout h-layout--to-left">
     <div class="column column__image">
-        <img src="{{ "/static/images/typewriter.jpg" | url }}" alt="Old typewriter">
+        <img loading="lazy" src="{{ "/static/images/typewriter.jpg" | url }}" alt="Old typewriter">
     </div>
     <div class="column column__text">
       <h2>[02] Skills</h2>
@@ -69,7 +69,7 @@ title: Home
     {% for work in works %}
       <div class="work-detail">
         <div class="work-detail__image-wrapper">
-          <img src="{{  work.image[0] | url}}" alt="{{ work.name }}">
+          <img loading="lazy" src="{{  work.image[0] | url}}" alt="{{ work.name }}">
         </div>
 
         <div class="work-detail__info">
@@ -126,7 +126,7 @@ title: Home
       </div>
 
       <div class="column column__image">
-        <img src="{{ "/static/images/telephone.jpg" | url }}" alt="Old telephone horn">
+        <img loading="lazy" src="{{ "/static/images/telephone.jpg" | url }}" alt="Old telephone horn">
       </div>
     </article>
   </section>
