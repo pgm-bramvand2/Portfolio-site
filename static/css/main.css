@@ -212,6 +212,7 @@ nav ul li:nth-child(even):hover {
   }
 }
 footer {
+  padding: 2rem;
   width: 100%;
   display: flex;
   justify-content: center;
@@ -342,13 +343,22 @@ article .column__text strong {
 }
 article .column__text em {
   font-weight: bold;
-  font-size: 1.5rem;
+  font-size: 1.2rem;
   font-style: normal;
+}
+@media (min-width: 60rem) {
+  article .column__text em {
+    font-size: 1.5rem;
+  }
 }
 article .column__text ul {
   padding: 0;
   list-style: none;
-  font-size: 1.5rem;
+}
+@media (min-width: 60rem) {
+  article .column__text ul {
+    font-size: 1.5rem;
+  }
 }
 article .column__text ul li {
   display: block;
